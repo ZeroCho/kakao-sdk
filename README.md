@@ -2,7 +2,7 @@
 Kakao Javascript SDK입니다.
 ## How to install / 설치 방법
 ```
-meteor add zerocho:kakao-javascript
+meteor add zerocho:kakao-sdk
 ```
 ## Using Meteor.settings
 ```json
@@ -15,7 +15,8 @@ meteor add zerocho:kakao-javascript
 }
 ```
 ## Document / 설명서
-Automatically load and init kakao javascript api
+Automatically loads the script and initiates Kakao javascript SDK
+자동으로 스크립트를 로드하고 Kakao.init()을 실행합니다.
 ```js
 if (Meteor.isClient) {
   Meteor.startup(function() {
@@ -25,6 +26,8 @@ if (Meteor.isClient) {
 }
 ```
 
+Can find whether the script is loaded or not
+스크립트가 로딩되었는지 아닌지 확인할 수 있습니다.
 ```js
 Kakao.loaded() // true or false
 ```
